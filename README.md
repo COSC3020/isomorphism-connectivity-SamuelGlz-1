@@ -50,17 +50,26 @@ Edges of B: $E_2$ = (w,x) (w,y) (x,y) (x,z) (y,z) (z,x)
 The graphs A and B not completeley connected since there is not an edge for every pair of vertices, but they are isomorphic according to the aformentioned
 ormal definition of isomorphisim in that.
 
- $f: V_1 \rightarrow V_2$ such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$
+ $f: V_1 \rightarrow V_2$ such that $(u,v) \in E_1$ if $(f(u),f(v)) \in E_2$
 
-An example being:
+We can see that all the nodes $V_1$ have an equivalent in $V_2$:
 
  f(a) -> w
 
  f(b) -> x
 
- taking one of the edges (f(a),f(b)) -> (w,x) which is $\in$ $E_2$
+ f(c) -> y
 
- this applies to all the edges $V_1$
+ f(d) -> z
+
+We can see that all the edges in the set $E_1$ have an equivalent in the set $E_2$
+
+(a,b) -> (w,x) 
+(a,c) -> (w,y) 
+(b,c) -> (x,y) 
+(b,d) -> (x,z) 
+(c,d) -> (y,z) 
+(d,b) -> (z,x)
 
  So we can conclude that not all graphs that are isomorphic are completely connected.
 
